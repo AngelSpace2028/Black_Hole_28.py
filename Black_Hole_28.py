@@ -959,7 +959,13 @@ class compression:
                                             if N4 not in X4:  # Only increment X1 and append if N4 is new
                                                X1 += 1  # Increment   
                                                if len(X4) < max_elements:  # Append only if below limit
-                                 
+                                                  X4.append(N4) 
+                                            else: 
+                                               X4.clear()
+                                               X1 = 1
+                                               X4.append(N4) 
+          
+                                             
                                   
                              
                          
@@ -970,11 +976,13 @@ class compression:
               
  
  
-X4.append(N4)
-    else:  # Reset list and counter when limit is reached
-        X4.clear()
-        X1 = 1
-        X4.append(N4)  # Append the new N4 after reset                                    # Check if N4 is in the list X4
+
+                         
+                  
+                                
+                                                           
+        
+         # Append the new N4 after reset                                    # Check if N4 is in the list X4
                                             
                                                       # Do nothing, X1 stays the same
                                             
