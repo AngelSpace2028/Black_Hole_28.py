@@ -462,14 +462,14 @@ class compression:
                                                     # Reset condition (e.g., user enters 0 to reset)
                                       
                                                                                    # Check if N4 is in the list X4
-                                            if N4 in X4:
-                                                        pass  # Do nothing, X1 stays the same
-                                            else:
-                                                        X1 += 1  # Increment X1
-                                            
-                                                    # Add N4 to the list if the maximum size is not exceeded
-                                            if len(X4) <= max_elements:
-                                                        X4.append(N4)
+                                            if N4 not in X4:  # Only increment X1 and append if N4 is new
+                                               X1 += 1  # Increment   
+                                               if len(X4) < max_elements:  # Append only if below limit
+                                                  X4.append(N4) 
+                                            else: 
+                                               X4.clear()
+                                               X1 = 1
+                                               X4.append(N4)
                                             
                                                         #print("Maximum list size reached! Resetting...")
                                                          # Reset the list
