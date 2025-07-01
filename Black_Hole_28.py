@@ -468,11 +468,11 @@ class compression:
                                                         X1 += 1  # Increment X1
                                             
                                                     # Add N4 to the list if the maximum size is not exceeded
-                                            if len(X4) < max_elements:
+                                            if len(X4) <= max_elements:
                                                         X4.append(N4)
-                                            else:
+                                            
                                                         #print("Maximum list size reached! Resetting...")
-                                                        X1=X1  # Reset the list
+                                                         # Reset the list
                                                          # Reset the counter
                                             
                                                     # Print the updated values of X1 and the size of X4
@@ -963,11 +963,12 @@ class compression:
                                                         X1 += 1  # Increment X1
                                             
                                                     # Add N4 to the list if the maximum size is not exceeded
-                                            if len(X4) < max_elements:
+                                            if len(X4) <= max_elements:
                                                         X4.append(N4)
-                                            else:
+                                            
                                                         #print("Maximum list size reached! Resetting...")
-                                                        X1=X1  # Reset the list
+                                                         # Reset the list
+                                                       
                                                          # Reset the counter
                                             
                                                     # Print the updated values of X1 and the size of X4
