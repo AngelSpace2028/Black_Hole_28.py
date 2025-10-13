@@ -71,7 +71,7 @@ class compression:
                                 
                         
 
-                        Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
+                        Number_of_the_file =((Number_of_the_file * Square_of_ROOT) + Add_Numbers**Multiply)
                         #print(Number_of_the_file)
 
                         F=0
