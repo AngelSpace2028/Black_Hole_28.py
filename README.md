@@ -1,2 +1,2 @@
-Here is anwear needs cubits:
+Here is anwear needs qubits:
 20
